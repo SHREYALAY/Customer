@@ -1,16 +1,16 @@
 CREATE TABLE Customer
 (
 Customer_Name varchar(255) NOT NULL,
-Customer_ID int NOT NULL,
+Customer_ID int PRIMARY KEY NOT NULL,
 Customer_Open_Date int NOT NULL,
-LastConsulted_Date int,
-Vaccination_Type char(5),
-Doctor_Consulted char(5),
-State char(5),
-Country char(5),
-Post_Code int,
-Date_Of_Birth int,
-Active_Customer char(1)
+LastConsulted_Date int NoT NULL,
+Vaccination_Type char(5) NoT NULL,
+Doctor_Consulted char(5) DEFAULT NULL,
+State char(5) DEFAULT NULL,
+Country char(5) NoT NULL,
+Post_Code int NoT NULL,
+Date_Of_Birth int DEFAULT NULL,
+Active_Customer char(1) NoT NULL
 );
 
 INSERT INTO Customer VALUES('Alex',101,20210607,20210706,'MVD','paul','SA','USA',400012,19971213,'A');
